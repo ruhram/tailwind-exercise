@@ -5,13 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style type = "text/tailwindcss">
+        *{
+            border: 1px solid;
+        }
+    </style>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend : {
+            spacing: {
+                '13': '3.25rem'
+            },
+            colors: {
+                kopi: '#c0ffee'
+            }
+        },
+      },
+    };
+    </script>
 </head>
 <body>
-    <h1 class="text-6xl">Mari belajar tailwind css</h1>
+    <h1 class="text-8xl font-bold text-center my10">Mari belajar 
+        <span class="bg-gradient-to-t from-blue-500 to-teal-400 bg-clip-text text-transparent">tailwind css</span></h1>
 
-    <section>
-        <h2 class="">Spacing</h2>
-        <div class="m-1">Margin</div>
+    <section class="mb-10 bg-gradient-to-r from-indigo-200 via-red-300 to-yellow-300 ">
+        <h2 class="text-3xl text-center">Spacing</h2>
+        <div class="ml-13 m-auto">Margin</div>
+        <div class="p-8">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-green-20 text-center">
+        <h2>Sizing</h2>
+        <div class="w-32 h-32">Kotak 1</div>
+    </section>
+
+    <section class ="mb-96 font-serif max-w-3xl mx-auto">
+        <h2 class="mb-4 text-4xl font-bold">Belajar Typography</h2>
+        <div class="mb-4 text-lg text-gray-500 font-semibold">
+            By Rully
+        </div>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, velit!</p>
+        <p class="mb-4 italic font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, velit!</p>
     </section>
 </body>
 </html>
