@@ -1,0 +1,11 @@
+# Ignore npm logs
+4-portofolio-tailwind/npm-debug.log
+4-portofolio-tailwind/yarn-debug.log
+4-portofolio-tailwind/yarn-error.log
+
+# Ignore npm modules
+4-portofolio-tailwind/node_modules/
+
+# Ignore package-lock files
+4-portofolio-tailwind/package-lock.json
+4-portofolio-tailwind/yarn.lock
